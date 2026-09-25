@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substitua SEU-DOMINIO-AQUI.example pelo domínio oficial antes da publicação. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://SEU-DOMINIO-AQUI.example/</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/sobre</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/equipe</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/faq</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/agendamento</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/contato</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/politica-de-privacidade</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/politica-de-cookies</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/termos-de-uso</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/limpeza-de-pele</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/botox</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/preenchimento-facial</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/bioestimuladores</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/harmonizacao-facial</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/depilacao-a-laser</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/tratamentos-corporais</loc></url>
+  <url><loc>https://SEU-DOMINIO-AQUI.example/procedimentos/skinbooster</loc></url>
+</urlset>

@@ -1,0 +1,26 @@
+import { Router } from 'express'
+import { adminOnly, authMiddleware } from '../middlewares/authMiddleware.js'
+import * as controller from '../controllers/controllers.js'
+
+export const router = Router()
+router.get('/health', controller.health)
+router.post('/auth/login', controller.login)
+router.get('/procedures', controller.listProcedures)
+router.get('/procedures/:slug', controller.getProcedure)
+router.post('/procedures', authMiddleware, adminOnly, controller.createProcedure)
+router.put('/procedures/:id', authMiddleware, adminOnly, controller.updateProcedure)
+router.delete('/procedures/:id', authMiddleware, adminOnly, controller.deleteProcedure)
+router.get('/professionals', controller.listProfessionals)
+router.get('/professionals/:id', controller.getProfessional)
+router.post('/professionals', authMiddleware, adminOnly, controller.createProfessional)
+router.put('/professionals/:id', authMiddleware, adminOnly, controller.updateProfessional)
+router.delete('/professionals/:id', authMiddleware, adminOnly, controller.deleteProfessional)
+router.get('/appointments/availability', controller.availability)
+router.post('/appointments', controller.createAppointmentController)
+router.get('/appointments', authMiddleware, adminOnly, controller.listAppointments)
+router.get('/appointments/:id', authMiddleware, adminOnly, controller.getAppointment)
+router.patch('/appointments/:id/status', authMiddleware, adminOnly, controller.updateAppointmentStatus)
+router.delete('/appointments/:id', authMiddleware, adminOnly, controller.deleteAppointment)
+router.post('/contact', controller.createContact)
+router.get('/contact', authMiddleware, adminOnly, controller.listContact)
+router.patch('/contact/:id/status', authMiddleware, adminOnly, controller.updateContactStatus)

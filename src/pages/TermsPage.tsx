@@ -1,0 +1,20 @@
+import { useEffect } from 'react'
+import { LegalPage } from '../components/legal/LegalPage'
+
+const sections = [
+  { id: 'aceitacao', title: 'Aceitação dos termos', paragraphs: ['Ao navegar pelo site da AIROSA ESTÉTICA, a pessoa visitante declara que leu esta estrutura de Termos de Uso. A utilização deve respeitar a legislação aplicável e os limites descritos neste documento.', 'Estes termos são demonstrativos e não substituem uma revisão jurídica.'] },
+  { id: 'finalidade', title: 'Finalidade do site', paragraphs: ['O site tem finalidade institucional e informativa: apresentar a AIROSA, seus canais de contato e possibilidades de procedimentos, além de receber solicitações de agendamento e mensagens.', 'As informações disponíveis não substituem uma avaliação ou orientação profissional individual.'] },
+  { id: 'procedimentos', title: 'Informações sobre procedimentos', paragraphs: ['Os textos sobre procedimentos têm caráter geral e demonstrativo. Eles não constituem promessa de resultado, indicação individual ou diagnóstico.', 'A indicação, as condições e as orientações de cada atendimento dependem de avaliação e conversa com a equipe responsável.'] },
+  { id: 'agendamento', title: 'Agendamento', paragraphs: ['O formulário de agendamento recebe uma solicitação de contato. A escolha de data e horário exibida no site é demonstrativa e não significa disponibilidade ou reserva confirmada.', 'A confirmação definitiva depende do contato da AIROSA e de seus procedimentos de atendimento reais.'] },
+  { id: 'usuario', title: 'Responsabilidade do usuário', paragraphs: ['A pessoa usuária se compromete a fornecer informações verdadeiras, manter seus dados de contato atualizados e utilizar os canais do site de forma responsável.', 'Não envie pelo formulário informações que não sejam necessárias para a finalidade apresentada, especialmente dados sensíveis.'] },
+  { id: 'propriedade', title: 'Propriedade intelectual', paragraphs: ['A identidade visual, os textos, imagens e demais elementos do site devem ser utilizados apenas nos limites permitidos pela AIROSA ou pelos respectivos titulares. Imagens demonstrativas de terceiros deverão ser substituídas ou licenciadas conforme a publicação real.'] },
+  { id: 'links', title: 'Links externos', paragraphs: ['O site pode apontar para canais externos, como WhatsApp e Instagram. Esses ambientes possuem regras próprias, e a AIROSA não define o funcionamento ou as políticas de terceiros.', 'Os links e os perfis oficiais devem ser confirmados antes da publicação comercial.'] },
+  { id: 'limitacoes', title: 'Limitações de responsabilidade', paragraphs: ['A AIROSA buscará manter informações claras e atualizadas, mas este site demonstrativo pode conter dados provisórios, indisponibilidades ou links que ainda dependem de configuração.', 'Esta seção não pretende estabelecer exclusões jurídicas absolutas. A redação final deve considerar as operações reais e passar por revisão jurídica.'] },
+  { id: 'alteracoes', title: 'Alterações dos termos', paragraphs: ['Os termos podem ser atualizados para refletir mudanças no site, nos serviços ou na forma de atendimento. A data de atualização deverá ser informada em uma versão publicada e revisada.'] },
+  { id: 'contato', title: 'Contato', paragraphs: ['Para dúvidas gerais sobre o site, o canal institucional demonstrativo é contato@airosaestetica.com.br. Este endereço precisa ser confirmado antes da publicação e não deve ser interpretado como canal jurídico formal.'] },
+]
+
+export function TermsPage() {
+  useEffect(() => { document.title = 'Termos de Uso | AIROSA Estética' }, [])
+  return <LegalPage eyebrow="termos de uso" title="Um espaço claro para cada escolha." introduction="Condições iniciais para navegação e uso do site institucional da AIROSA ESTÉTICA." notice="Este conteúdo é uma estrutura institucional demonstrativa, pronta para ser revisada e adaptada às operações reais da clínica antes do uso comercial. Recomenda-se revisão jurídica." sections={sections} updatedAt="agosto de 2026" />
+}

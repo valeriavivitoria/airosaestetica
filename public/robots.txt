@@ -1,0 +1,4 @@
+# Substitua SEU-DOMINIO-AQUI.example pelo domínio oficial antes da publicação.
+User-agent: *
+Allow: /
+Sitemap: https://SEU-DOMINIO-AQUI.example/sitemap.xml
